@@ -1,0 +1,232 @@
+/* RYUA readable brand typography: solid, high-contrast, Arabic-first. */
+:root {
+  --ryua-font: Tahoma, Arial, sans-serif;
+  --sans: Tahoma, Arial, sans-serif !important;
+  --serif: Tahoma, Arial, sans-serif !important;
+}
+
+html,
+body,
+body *,
+button,
+input,
+select,
+textarea {
+  font-family: var(--ryua-font) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+h1,
+h2,
+h3,
+h4,
+.logo-title,
+.nav-side a,
+.nav-side button,
+.button-primary,
+.button-secondary,
+.product-name,
+.product-price,
+.section-heading h2,
+.stylist-heading h2,
+.experience-top h2,
+.order-copy h2,
+.bag-head h2,
+.bag-total,
+.dock-action,
+.dock-theme-choice {
+  font-family: var(--ryua-font) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em !important;
+  -webkit-text-stroke: 0 !important;
+  text-shadow: none !important;
+}
+
+.hero-title,
+.section-heading h2,
+.stylist-heading h2,
+.experience-top h2,
+.order-copy h2 {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  -webkit-text-stroke: 0 !important;
+  filter: none !important;
+}
+
+.hero-title {
+  color: #10202d !important;
+  text-shadow: 0 2px 12px rgba(255, 255, 255, 0.84) !important;
+}
+
+.hero-description,
+.hero-eyebrow,
+.section-heading p,
+.stylist-heading > p,
+.experience-card p,
+.product-description,
+.footer-brand p,
+.footer-links a,
+.footer-bottom {
+  font-family: var(--ryua-font) !important;
+  font-weight: 600 !important;
+  text-shadow: none !important;
+}
+
+html[data-theme="midnight"] .hero-title,
+html[data-theme="midnight"] .hero-description,
+html[data-theme="midnight"] .hero-eyebrow {
+  color: #ffffff !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8) !important;
+}
+
+html[data-theme="mono"] .hero-title,
+html[data-theme="mono"] .section-heading h2,
+html[data-theme="mono"] .stylist-heading h2,
+html[data-theme="mono"] .experience-top h2,
+html[data-theme="mono"] .order-copy h2 {
+  color: #10202d !important;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.9) !important;
+}
+
+html[data-theme="mono"] body,
+html[data-theme="mono"] body :is(h1,h2,h3,h4,p,small,label,button,a,span,strong,li,dt,dd,.micro) {
+  color: #162532 !important;
+}
+
+html[data-theme="mono"] .hero-copy :is(.hero-title,.hero-description,.hero-eyebrow),
+html[data-theme="mono"] .button-primary,
+html[data-theme="mono"] .stylist-cta,
+html[data-theme="mono"] .bag-checkout {
+  color: #10202d !important;
+}
+
+.dialog-copy,
+.dialog-copy label,
+.dialog-copy input,
+.dialog-copy select,
+.dialog-copy button,
+.fit-customizer,
+.measure-field,
+.color-option,
+.dialog-note,
+.measure-guide {
+  font-family: var(--ryua-font) !important;
+  font-weight: 600 !important;
+  text-shadow: none !important;
+}
+
+/* RYUA black theme: pure black surfaces with readable ivory and cyan accents. */
+html[data-theme="black"],
+html[data-theme="black"] body {
+  --paper: #050608;
+  --surface: #0b0e12;
+  --ink: #f5f8fa;
+  --muted: #b7c3ca;
+  --line: #28343d;
+  --olive: #75edf2;
+  --olive-dark: #101b24;
+  background: #050608 !important;
+  color: #f5f8fa !important;
+}
+
+html[data-theme="black"] body :is(h1,h2,h3,h4,p,small,label,button,a,span,strong,li,dt,dd,.micro),
+html[data-theme="black"] .product-description,
+html[data-theme="black"] .section-heading p,
+html[data-theme="black"] .stylist-heading > p {
+  color: #f5f8fa !important;
+  text-shadow: 0 1px 0 #ffffff18, 0 2px 5px #000 !important;
+}
+
+html[data-theme="black"] .site-header,
+html[data-theme="black"] .announcement,
+html[data-theme="black"] .benefits,
+html[data-theme="black"] .collection,
+html[data-theme="black"] .stylist,
+html[data-theme="black"] .editorial,
+html[data-theme="black"] .experience,
+html[data-theme="black"] .order-section,
+html[data-theme="black"] .footer,
+html[data-theme="black"] .quick-dock,
+html[data-theme="black"] .bag-panel,
+html[data-theme="black"] .experience-card,
+html[data-theme="black"] .product-card {
+  background: #080b0f !important;
+  color: #f5f8fa !important;
+  border-color: #263743 !important;
+}
+
+html[data-theme="black"] .announcement { background: #0e161d !important; color: #9af4f5 !important; }
+html[data-theme="black"] .hero-stage { background: #020305 !important; }
+html[data-theme="black"] .hero-stage:after { background: linear-gradient(90deg,#020305e8 0%,#020305a6 30%,#02030543 55%,transparent 82%),linear-gradient(0deg,#0008,transparent 55%) !important; }
+html[data-theme="black"] .hero-title,
+html[data-theme="black"] .section-heading h2,
+html[data-theme="black"] .stylist-heading h2,
+html[data-theme="black"] .experience-top h2,
+html[data-theme="black"] .order-copy h2 { color: #ffffff !important; text-shadow: 0 2px 0 #071118,0 4px 12px #000 !important; }
+html[data-theme="black"] .button-primary,
+html[data-theme="black"] .stylist-cta,
+html[data-theme="black"] .bag-checkout,
+html[data-theme="black"] .dock-bag { background: #75edf2 !important; color: #061016 !important; border-color: #75edf2 !important; }
+html[data-theme="black"] .product-photo,
+html[data-theme="black"] .editorial-photo { opacity: 1 !important; filter: saturate(1.12) contrast(1.08) brightness(1.04) !important; }
+html[data-theme="black"] .dialog-copy,
+html[data-theme="black"] .fit-customizer,
+html[data-theme="black"] .measure-field,
+html[data-theme="black"] .color-option { background: #0b1117 !important; color: #f5f8fa !important; border-color: #304652 !important; }
+
+/* Product details are for sunglasses only: hide the old garment-style measurement workflow. */
+.designer-fields,
+#readyFields,
+.measurement-mode,
+#customMode,
+#customFields,
+.measure-guide,
+label:has(#readyHeight) {
+  display: none !important;
+}
+
+.fit-customizer { padding-bottom: 18px !important; }
+.color-picker { margin-bottom: 0 !important; }
+.color-options { gap: 10px !important; }
+.color-option { min-height: 43px !important; font-size: 13px !important; }
+
+body { font-size: 15px !important; line-height: 1.7 !important; }
+.nav-side a,
+.nav-side button,
+.button-primary,
+.button-secondary,
+.filter-button,
+.choice,
+.tone-choice,
+.mode-button,
+.quick-add,
+.product-detail-link,
+.dock-action { font-size: 12px !important; }
+.hero-description,
+.section-heading p,
+.stylist-heading > p,
+.product-description,
+.experience-card p,
+.order-copy p,
+.order-step span:last-child,
+.footer-brand p,
+.footer-links a,
+.dialog-description,
+.dialog-note { font-size: 13px !important; line-height: 1.85 !important; }
+.micro,
+.product-label,
+.recommendation-line,
+.question-index { font-size: 10px !important; font-weight: 700 !important; }
+.product-name { font-size: 15px !important; }
+.product-price { font-size: 13px !important; }
+.customizer-heading strong,
+.measure-heading strong { font-size: 16px !important; }
+
+html[data-theme="midnight"] body :is(p,small,label,a,button,span,strong,.micro),
+html[data-theme="black"] body :is(p,small,label,a,button,span,strong,.micro) {
+  opacity: 1 !important;
+}
