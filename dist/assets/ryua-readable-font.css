@@ -589,3 +589,40 @@ select {
     transform: none !important;
   }
 }
+
+/* Final accessibility and premium interaction pass. */
+:where(a, button, input, select, textarea, summary):focus-visible {
+  outline: 3px solid #75edf2 !important;
+  outline-offset: 4px !important;
+}
+
+::selection {
+  background: #75edf2;
+  color: #071723;
+}
+
+html {
+  color-scheme: dark;
+}
+
+html[data-theme="mono"] {
+  color-scheme: light;
+}
+
+/* The rose palette is retired; this selector prevents stale saved markup from
+   ever bringing the pink theme back while keeping old saved preferences safe. */
+html[data-theme="__retired_rose"] {
+  --paper: #080b12;
+  --surface: #101522;
+  --ink: #f0f4fb;
+  --muted: #a0aabd;
+  --line: #ffffff1b;
+  --olive: #71f4ff;
+  --olive-dark: #121b2b;
+  --theme-accent: #71f4ff;
+  --theme-accent-2: #9a85f5;
+  --theme-bg: #0b1420;
+  --theme-panel: #142435;
+  --theme-ink: #f0f5fb;
+  --theme-muted: #c0cede;
+}
